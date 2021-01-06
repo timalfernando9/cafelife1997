@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<title>Products</title>
+<meta charset="UTF-8">
+    <meta name=viewport content="width=device-width, initial-scale=1, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="products.css">
+    
+    
+    
+<head>
+    <img class="logo" src="/logo.png" alt="logo">
+    <a class="home" href="mypage.html"><button>Home page</button></a>
+    <div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext"></div>
+  <img src="/pexels-burst-374592.jpg" style="width:100%">
+  <div class="text"></div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="/pexels-lukas-317377.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="/pexels-pixabay-414645.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+    
+</head>
+    
+    <div class="maintxt">
+    <img src="/products.png" alt="maintext">
+        <br>
+    <img src="/wordtxt.png" alt="maintext">
+    
+    </div>
+<body>
+ <div class="boxses"> 
+        <a class="lays"><img src="/c1.png" alt="layput"></a>
+        <a class="lays"><img src="/c2.png" alt="layput"></a>
+        <a class="lays"><img src="/c3.png" alt="layput"></a>
+        <a class="lays"><img src="/c4.png" alt="layput"></a>
+        <a class="lays"><img src="/c5.png" alt="layput"></a>
+        <a class="lays"><img src="/c6.png" alt="layput"></a>
+        <a class="lays"><img src="/c7.png" alt="layput"></a>
+        <a class="lays"><img src="/c8.png" alt="layput"></a>
+        <a class="lays"><img src="/c9.png" alt="layput"></a>
+     
+    
+     </div>  
+</body>
+</html>

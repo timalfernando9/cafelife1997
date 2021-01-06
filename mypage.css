@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,600;1,900&display=swap');
+    
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+li, a, button{
+    font-family: "Monstserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    color:black;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url(top-view-cup-with-roasted-coffee-beans.jpg);
+    padding-bottom: 550px;
+    background-size: cover;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu li{
+    display: inline-block;
+    padding: 1px 30px 10px;
+}
+.menu li a{
+    transition: all 0.3s ease 0s;
+}
+.menu li a:hover{
+    color: #0088a9;
+}
+button{
+    padding: 9px 25px;
+    background-color:#965f41;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+button:hover{
+    background-color: rgba(0,136,169,0.8);
+}
+.mainimg{
+    height: 100px;
+    width: auto
+    
+}

@@ -1,0 +1,34 @@
+.sub{
+    text-align: center;
+}
+.about{
+    text-align: center;
+}
+.b2{
+    text-align: right;
+}
+.b4{
+    text-align: right;
+}
+.b6{
+    text-align: right;
+}
+.b8{
+    text-align: right;
+}
+.box1{
+    background-color:cornsilk;
+}
+button{
+    padding: 9px 25px;
+    background-color:#965f41;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+button:hover{
+    background-color:antiquewhite;
+    color: brown;
+}
